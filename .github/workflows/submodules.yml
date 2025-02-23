@@ -1,7 +1,6 @@
-name: Update module
+name: Update Submodules
 on:
-  repository_dispatch:
-    types: update
+  workflow_dispatch: # Позволяет запускать workflow вручную через интерфейс
 jobs:
   update:
     runs-on: ubuntu-latest
