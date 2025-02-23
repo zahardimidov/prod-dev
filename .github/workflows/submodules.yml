@@ -28,4 +28,4 @@ jobs:
         run: |
           git push origin HEAD:main # Убедитесь, что вы находитесь на правильной ветке
         env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN }} # Используем токен для аутентификации
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Используем токен для аутентификации
