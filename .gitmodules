@@ -1,0 +1,3 @@
+[submodule "prod-frontend"]
+	path = prod-frontend
+	url = git@github.com:zahardimidov/prod-frontend.git

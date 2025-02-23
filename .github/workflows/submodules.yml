@@ -1,0 +1,22 @@
+name: Update Submodule
+
+on:
+  push:
+    branches:
+      - main # или другая ветка
+
+#jobs:
+#  update-submodule:
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Checkout repository
+#        uses: actions/checkout@v2
+#        with:
+#          submodules: "true" # Подтягиваем подмодули
+#
+#      - name: Update submodule
+#        run: |
+#          git submodule update --remote --merge
+#          git add prod-frontend
+#          git commit -m "Update submodule to latest version" || echo "No changes to commit"
+#          git push origin main  # или другая ветка
