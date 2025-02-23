@@ -27,4 +27,4 @@ jobs:
 
       - name: Push changes
         run: |
-          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/zahardimidov/prod-dev.git main
+          git push https://x-access-token:${{ secrets.TOKEN }}@github.com/zahardimidov/prod-dev.git main
