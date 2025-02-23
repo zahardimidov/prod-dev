@@ -1,9 +1,9 @@
-name: Update Submodule
+#name: Update Submodule
 
-on:
-  push:
-    branches:
-      - main # или другая ветка
+#on:
+#  push:
+#    branches:
+#      - main # или другая ветка
 
 #jobs:
 #  update-submodule:
