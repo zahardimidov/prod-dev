@@ -1,0 +1,18 @@
+stages:
+  - update
+
+update_submodules:
+  stage: update
+  image: alpine:latest
+  variables:
+    GIT_STRATEGY: fetch
+  before_script:
+    - apk add --no-cache git
+    - git config --global user.name "GitLab CI"
+    - git config --global user.email "noreply@gitlab.com"
+  script:
+    - git submodule update --init --recursive --remote
+    - git commit -am "deploy auto comment" || echo "No changes to commit"
+    - git push origin HEAD:main # Замените 'main' на вашу целевую ветку
+  only:
+    - triggers # или укажите другие условия, при которых будет запускаться этот job
